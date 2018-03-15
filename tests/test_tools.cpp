@@ -34,3 +34,16 @@ TEST(Tools, RMSE) {
 
     ASSERT_TRUE( t.CalculateRMSE(estimations, ground_truth).isApprox(expected) );
 }
+
+TEST(Tools, JACOBIAN) {
+	VectorXd input(4);
+	input << 1.0, 2.0, 0.2, 0.4;
+
+    Tools::Tools t;
+	MatrixXd expected(3,4);
+	expected << 0.447214, 0.894427, 0, 0,
+				-0.4, 0.2, 0, 0,
+				0, 0, 0.447214, 0.894427;
+
+    ASSERT_TRUE( t.CalculateJacobian(input).isApprox(expected, 0.00001) );
+}
