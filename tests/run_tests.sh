@@ -1,0 +1,1 @@
+googletest ./test_main.cpp ../src/tools.cpp ./test_tools.cpp
