@@ -80,7 +80,7 @@ void KalmanFilter::UpdateEKF(const VectorXd &z) {
     string ro = to_string(xr_(0));
     string phi = to_string(xr_(1));
     string ro_dot = to_string(xr_(2));
-    string log_line = "update,lidar," +
+    string log_line = "update,radar," +
                       to_string(px) +","+ to_string(py) +
                       ","+ to_string(vx) +","+ to_string(vy) +
                       ","+ ro +","+ phi +","+ ro_dot;
