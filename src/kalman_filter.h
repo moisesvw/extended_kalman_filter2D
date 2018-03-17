@@ -1,6 +1,7 @@
 #ifndef KALMAN_FILTER_H_
 #define KALMAN_FILTER_H_
 #include "Eigen/Dense"
+#include "logger.h"
 
 class KalmanFilter {
 public:
@@ -63,7 +64,9 @@ public:
    * @param z The measurement at k+1
    */
   void UpdateEKF(const Eigen::VectorXd &z);
-
+private:
+  bool debug_option;
+  Logger log;
 };
 
 #endif /* KALMAN_FILTER_H_ */
