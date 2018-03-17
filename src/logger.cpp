@@ -19,3 +19,6 @@ void Logger::log(const string & line){
     outfile << line.c_str() << std::endl;
 }
 
+void Logger::close(){
+    outfile.close();
+}

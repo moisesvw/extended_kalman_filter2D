@@ -9,6 +9,7 @@ public:
     Logger();
     virtual ~Logger();
     void log(const string &line);
+    void close();
 
 private:
     ofstream outfile;
