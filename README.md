@@ -1,7 +1,7 @@
 # Extended Kalman Filter Project Starter Code
 Self-Driving Car Engineer Nanodegree Program
 
-![Alt text](images/kalman.png "Kalman")
+![Alt text](images/kalman.gif "Kalman")
 ![Alt text](images/notebook.png "Notebook")
 
 
